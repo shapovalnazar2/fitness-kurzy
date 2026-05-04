@@ -5,7 +5,7 @@ const observer = new IntersectionObserver((entries, observer) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
 
-            // перестаємо слідкувати після анімації
+            // Po animácii prestaneme sledovať element
             observer.unobserve(entry.target);
         }
     });
